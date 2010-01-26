@@ -26,7 +26,7 @@ namespace WebUI
 
             For<ISession>()
                 .HybridHttpOrThreadLocalScoped()
-                .Use(x=>x.GetInstance<ISessionFactory>().OpenSession());
+                .Use(x => x.GetInstance<ISessionFactory>().OpenSession());
         }
     }
 }

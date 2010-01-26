@@ -21,8 +21,10 @@ namespace WebUI
 
         public static ThreadSafeSessionManager Instance
         {
-            get {
-                return NestedSessionManager.SessionManager; }
+            get
+            {
+                return NestedSessionManager.SessionManager;
+            }
         }
 
         public static ISession OpenSession()
@@ -42,11 +44,13 @@ namespace WebUI
         {
             _sessionFactory = Fluently.Configure()
               .ExposeConfiguration(c => c.SetProperty("current_session_context_class", "managed_web"))
-              .Database(MsSqlConfiguration.MsSql2008.ConnectionString(c => c.FromConnectionStringWithKey("SportsStore")))
+              .Database(MsSqlConfiguration.MsSql2008.ConnectionString(c => c.FromConnectionStringWithKey("SportsStore")).ShowSql())
               .Mappings(m =>
                 m.AutoMappings.Add(
                   AutoMap.AssemblyOf<Product>(type => type.Namespace.EndsWith("Entities"))))
               .BuildSessionFactory();
+            log4net.Config.XmlConfigurator.Configure();
+
         }
 
         class NestedSessionManager

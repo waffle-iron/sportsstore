@@ -18,10 +18,26 @@ namespace DomainModel.Concrete
             _session = session;
         }
 
-        public IList<Product> GetAll()
+        public int GetCount()
         {
-            var criteria = DetachedCriteria.For<Product>();
-            return criteria.GetExecutableCriteria(_session).List<Product>();
+            var rowCount = CriteriaTransformer.TransformToRowCount(
+                DetachedCriteria.For<Product>()).GetExecutableCriteria(_session).UniqueResult<int>();
+            return rowCount;
+        }
+
+        public IList<Product> GetByPage(int page, int pageSize)
+        {
+            int first = (page - 1) * pageSize;
+            return _session.CreateCriteria(typeof(Product))
+                .SetFirstResult(first)
+                .SetMaxResults(pageSize)
+                .List<Product>();
+        }
+
+        public Product Add(Product product)
+        {
+            _session.SaveOrUpdate(product);
+            return product;
         }
     }
 }

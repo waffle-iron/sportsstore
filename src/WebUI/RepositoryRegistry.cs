@@ -21,8 +21,8 @@ namespace WebUI
         public RepositoryRegistry()
         {
             For<IProductsRepository>()
-                .Singleton()
-                .Use(x=>x.GetInstance<ProductsRepository>());
+                .HybridHttpOrThreadLocalScoped()
+                .Use(x => x.GetInstance<ProductsRepository>());
         }
     }
 }

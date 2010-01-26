@@ -7,18 +7,20 @@ using DomainModel.Entities;
 
 namespace DomainModel.Concrete
 {
-    public class FakeProductsRepository : IProductsRepository
-    {
-        private static IList<Product> fakeProducts = new List<Product>
-                                                              {
-                                                                  new Product {Name = "Football", Price = 25},
-                                                                  new Product {Name = "Surf board", Price = 179},
-                                                                  new Product {Name = "Running shoes", Price = 95}
-                                                              };
+    //public class FakeProductsRepository : IProductsRepository
+    //{
+    //    private static IList<Product> fakeProducts = new List<Product>
+    //                                                          {
+    //                                                              new Product {Name = "Football", Price = 25},
+    //                                                              new Product {Name = "Surf board", Price = 179},
+    //                                                              new Product {Name = "Running shoes", Price = 95}
+    //                                                          };
 
-        public IList<Product> GetAll()
-        {
-            return fakeProducts;
-        }
-    }
+    //    public IList<Product> GetAll()
+    //    {
+    //        return fakeProducts;
+    //    }
+
+    //    public int PageSize { get; set; }
+    //}
 }

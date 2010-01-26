@@ -8,6 +8,8 @@ namespace DomainModel.Abstract
 {
     public interface IProductsRepository
     {
-        IList<Product> GetAll();
+        int GetCount();
+        IList<Product> GetByPage(int page, int pageSize);
+        Product Add(Product product);
     }
 }

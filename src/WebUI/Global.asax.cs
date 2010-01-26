@@ -28,10 +28,17 @@ namespace SportsStore
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
-                "Default",                                              // Route name
-                "{controller}/{action}/{id}",                           // URL with parameters
-                new { controller = "Products", action = "List", id = "" }  // Parameter defaults
+                "null", // don't bother
+                "", // matches the root url, i.e. ~/
+                new { controller = "Products", action = "List", page = 1 }  // defaults
             );
+
+            routes.MapRoute(
+                null, // Don't bother giving this route entry a name
+                "Page{page}", // URL pattern, e.g. ~/Page683
+                new { controller = "Products", action = "List" }, // Defaults
+                new { page = @"\d+" } // Constraints: page must be numerical
+                );
 
         }
 
