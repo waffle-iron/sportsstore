@@ -8,11 +8,7 @@
 
     <%
         foreach (var product in Model){%>
-           <div class="item">
-            <h3><%=product.Name %></h3>
-            <%=product.Description %>
-            <h4><%=product.Price.ToString("c") %></h4>
-           </div> 
+            <% Html.RenderPartial("ProductSummary", product); %>
         <% } %>
 
     <div class="pager">

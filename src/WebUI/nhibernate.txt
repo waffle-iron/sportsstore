@@ -1,250 +1,180 @@
-21:57:50 [4] DEBUG NHibernate.Impl.SessionImpl - [session-id=7ae53a98-5982-4e49-8d11-82c81b26237a] opened session at timestamp:634000534705
-21:57:50 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
-21:57:50 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT count(*) as y0_ FROM [Product] this_
-21:57:50 [4] INFO  NHibernate.Loader.Loader - SELECT count(*) as y0_ FROM [Product] this_
-21:57:50 [4] DEBUG NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
-21:57:50 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 75 ms
-21:57:50 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
-21:57:50 [4] DEBUG NHibernate.Loader.Loader - processing result set
-21:57:50 [4] DEBUG NHibernate.Loader.Loader - result set row: 0
-21:57:50 [4] DEBUG NHibernate.Loader.Loader - result row: 
-21:57:50 [4] DEBUG NHibernate.Loader.Loader - done processing result set (1 rows)
-21:57:50 [4] DEBUG NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
-21:57:50 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
-21:57:50 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 86 ms
-21:57:50 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
-21:57:50 [4] DEBUG NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
-21:57:50 [4] DEBUG NHibernate.Connection.ConnectionProvider - Closing connection
-21:57:50 [4] DEBUG NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
-21:57:50 [4] DEBUG NHibernate.AdoNet.ConnectionManager - after autocommit
-21:57:50 [4] DEBUG NHibernate.Impl.SessionImpl - transaction completion
-21:57:50 [4] DEBUG NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
-21:57:50 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
-21:57:50 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT top 4 this_.Id as Id0_0_, this_.Name as Name0_0_, this_.Description as Descript3_0_0_, this_.Price as Price0_0_, this_.Category as Category0_0_ FROM [Product] this_
-21:57:50 [4] INFO  NHibernate.Loader.Loader - SELECT top 4 this_.Id as Id0_0_, this_.Name as Name0_0_, this_.Description as Descript3_0_0_, this_.Price as Price0_0_, this_.Category as Category0_0_ FROM [Product] this_
-21:57:50 [4] DEBUG NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
-21:57:50 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
-21:57:50 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
-21:57:50 [4] DEBUG NHibernate.Loader.Loader - processing result set
-21:57:50 [4] DEBUG NHibernate.Loader.Loader - result set row: 0
-21:57:50 [4] DEBUG NHibernate.Loader.Loader - result row: EntityKey[DomainModel.Entities.Product#12]
-21:57:50 [4] DEBUG NHibernate.Loader.Loader - Initializing object from DataReader: [DomainModel.Entities.Product#12]
-21:57:50 [4] DEBUG NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [DomainModel.Entities.Product#12]
-21:57:50 [4] DEBUG NHibernate.Loader.Loader - result set row: 1
-21:57:50 [4] DEBUG NHibernate.Loader.Loader - result row: EntityKey[DomainModel.Entities.Product#13]
-21:57:50 [4] DEBUG NHibernate.Loader.Loader - Initializing object from DataReader: [DomainModel.Entities.Product#13]
-21:57:50 [4] DEBUG NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [DomainModel.Entities.Product#13]
-21:57:50 [4] DEBUG NHibernate.Loader.Loader - result set row: 2
-21:57:50 [4] DEBUG NHibernate.Loader.Loader - result row: EntityKey[DomainModel.Entities.Product#14]
-21:57:50 [4] DEBUG NHibernate.Loader.Loader - Initializing object from DataReader: [DomainModel.Entities.Product#14]
-21:57:50 [4] DEBUG NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [DomainModel.Entities.Product#14]
-21:57:50 [4] DEBUG NHibernate.Loader.Loader - result set row: 3
-21:57:50 [4] DEBUG NHibernate.Loader.Loader - result row: EntityKey[DomainModel.Entities.Product#15]
-21:57:50 [4] DEBUG NHibernate.Loader.Loader - Initializing object from DataReader: [DomainModel.Entities.Product#15]
-21:57:50 [4] DEBUG NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [DomainModel.Entities.Product#15]
-21:57:50 [4] DEBUG NHibernate.Loader.Loader - done processing result set (4 rows)
-21:57:50 [4] DEBUG NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
-21:57:50 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
-21:57:50 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 15 ms
-21:57:50 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
-21:57:50 [4] DEBUG NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
-21:57:50 [4] DEBUG NHibernate.Connection.ConnectionProvider - Closing connection
-21:57:50 [4] DEBUG NHibernate.Loader.Loader - total objects hydrated: 4
-21:57:50 [4] DEBUG NHibernate.Engine.TwoPhaseLoad - resolving associations for [DomainModel.Entities.Product#12]
-21:57:50 [4] DEBUG NHibernate.Engine.TwoPhaseLoad - done materializing entity [DomainModel.Entities.Product#12]
-21:57:50 [4] DEBUG NHibernate.Engine.TwoPhaseLoad - resolving associations for [DomainModel.Entities.Product#13]
-21:57:50 [4] DEBUG NHibernate.Engine.TwoPhaseLoad - done materializing entity [DomainModel.Entities.Product#13]
-21:57:50 [4] DEBUG NHibernate.Engine.TwoPhaseLoad - resolving associations for [DomainModel.Entities.Product#14]
-21:57:50 [4] DEBUG NHibernate.Engine.TwoPhaseLoad - done materializing entity [DomainModel.Entities.Product#14]
-21:57:50 [4] DEBUG NHibernate.Engine.TwoPhaseLoad - resolving associations for [DomainModel.Entities.Product#15]
-21:57:50 [4] DEBUG NHibernate.Engine.TwoPhaseLoad - done materializing entity [DomainModel.Entities.Product#15]
-21:57:50 [4] DEBUG NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
-21:57:50 [4] DEBUG NHibernate.AdoNet.ConnectionManager - after autocommit
-21:57:50 [4] DEBUG NHibernate.Impl.SessionImpl - transaction completion
-21:57:50 [4] DEBUG NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
-22:01:45 [4] DEBUG NHibernate.Impl.SessionImpl - [session-id=0ae9ccb6-0f08-4f96-8ead-f373f546b737] opened session at timestamp:634000537054
-22:01:45 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
-22:01:45 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT count(*) as y0_ FROM [Product] this_
-22:01:45 [4] INFO  NHibernate.Loader.Loader - SELECT count(*) as y0_ FROM [Product] this_
-22:01:45 [4] DEBUG NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
-22:01:45 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 105 ms
-22:01:45 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
-22:01:45 [4] DEBUG NHibernate.Loader.Loader - processing result set
-22:01:45 [4] DEBUG NHibernate.Loader.Loader - result set row: 0
-22:01:45 [4] DEBUG NHibernate.Loader.Loader - result row: 
-22:01:45 [4] DEBUG NHibernate.Loader.Loader - done processing result set (1 rows)
-22:01:45 [4] DEBUG NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
-22:01:45 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
-22:01:45 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 117 ms
-22:01:45 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
-22:01:45 [4] DEBUG NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
-22:01:45 [4] DEBUG NHibernate.Connection.ConnectionProvider - Closing connection
-22:01:45 [4] DEBUG NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
-22:01:45 [4] DEBUG NHibernate.AdoNet.ConnectionManager - after autocommit
-22:01:45 [4] DEBUG NHibernate.Impl.SessionImpl - transaction completion
-22:01:45 [4] DEBUG NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
-22:01:45 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
-22:01:45 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT top 4 this_.Id as Id0_0_, this_.Name as Name0_0_, this_.Description as Descript3_0_0_, this_.Price as Price0_0_, this_.Category as Category0_0_ FROM [Product] this_
-22:01:45 [4] INFO  NHibernate.Loader.Loader - SELECT top 4 this_.Id as Id0_0_, this_.Name as Name0_0_, this_.Description as Descript3_0_0_, this_.Price as Price0_0_, this_.Category as Category0_0_ FROM [Product] this_
-22:01:45 [4] DEBUG NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
-22:01:45 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 6 ms
-22:01:45 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
-22:01:45 [4] DEBUG NHibernate.Loader.Loader - processing result set
-22:01:45 [4] DEBUG NHibernate.Loader.Loader - result set row: 0
-22:01:45 [4] DEBUG NHibernate.Loader.Loader - result row: EntityKey[DomainModel.Entities.Product#12]
-22:01:45 [4] DEBUG NHibernate.Loader.Loader - Initializing object from DataReader: [DomainModel.Entities.Product#12]
-22:01:45 [4] DEBUG NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [DomainModel.Entities.Product#12]
-22:01:45 [4] DEBUG NHibernate.Loader.Loader - result set row: 1
-22:01:45 [4] DEBUG NHibernate.Loader.Loader - result row: EntityKey[DomainModel.Entities.Product#13]
-22:01:45 [4] DEBUG NHibernate.Loader.Loader - Initializing object from DataReader: [DomainModel.Entities.Product#13]
-22:01:45 [4] DEBUG NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [DomainModel.Entities.Product#13]
-22:01:45 [4] DEBUG NHibernate.Loader.Loader - result set row: 2
-22:01:45 [4] DEBUG NHibernate.Loader.Loader - result row: EntityKey[DomainModel.Entities.Product#14]
-22:01:45 [4] DEBUG NHibernate.Loader.Loader - Initializing object from DataReader: [DomainModel.Entities.Product#14]
-22:01:45 [4] DEBUG NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [DomainModel.Entities.Product#14]
-22:01:45 [4] DEBUG NHibernate.Loader.Loader - result set row: 3
-22:01:45 [4] DEBUG NHibernate.Loader.Loader - result row: EntityKey[DomainModel.Entities.Product#15]
-22:01:45 [4] DEBUG NHibernate.Loader.Loader - Initializing object from DataReader: [DomainModel.Entities.Product#15]
-22:01:45 [4] DEBUG NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [DomainModel.Entities.Product#15]
-22:01:45 [4] DEBUG NHibernate.Loader.Loader - done processing result set (4 rows)
-22:01:45 [4] DEBUG NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
-22:01:45 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
-22:01:45 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 20 ms
-22:01:45 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
-22:01:45 [4] DEBUG NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
-22:01:45 [4] DEBUG NHibernate.Connection.ConnectionProvider - Closing connection
-22:01:45 [4] DEBUG NHibernate.Loader.Loader - total objects hydrated: 4
-22:01:45 [4] DEBUG NHibernate.Engine.TwoPhaseLoad - resolving associations for [DomainModel.Entities.Product#12]
-22:01:45 [4] DEBUG NHibernate.Engine.TwoPhaseLoad - done materializing entity [DomainModel.Entities.Product#12]
-22:01:45 [4] DEBUG NHibernate.Engine.TwoPhaseLoad - resolving associations for [DomainModel.Entities.Product#13]
-22:01:45 [4] DEBUG NHibernate.Engine.TwoPhaseLoad - done materializing entity [DomainModel.Entities.Product#13]
-22:01:45 [4] DEBUG NHibernate.Engine.TwoPhaseLoad - resolving associations for [DomainModel.Entities.Product#14]
-22:01:45 [4] DEBUG NHibernate.Engine.TwoPhaseLoad - done materializing entity [DomainModel.Entities.Product#14]
-22:01:45 [4] DEBUG NHibernate.Engine.TwoPhaseLoad - resolving associations for [DomainModel.Entities.Product#15]
-22:01:45 [4] DEBUG NHibernate.Engine.TwoPhaseLoad - done materializing entity [DomainModel.Entities.Product#15]
-22:01:45 [4] DEBUG NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
-22:01:45 [4] DEBUG NHibernate.AdoNet.ConnectionManager - after autocommit
-22:01:45 [4] DEBUG NHibernate.Impl.SessionImpl - transaction completion
-22:01:45 [4] DEBUG NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
-22:01:49 [4] DEBUG NHibernate.Impl.SessionImpl - [session-id=43e2635a-f83b-43cc-a209-b2787c1caccf] opened session at timestamp:634000537091
-22:01:49 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
-22:01:49 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT count(*) as y0_ FROM [Product] this_
-22:01:49 [4] INFO  NHibernate.Loader.Loader - SELECT count(*) as y0_ FROM [Product] this_
-22:01:49 [4] DEBUG NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
-22:01:49 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
-22:01:49 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
-22:01:49 [4] DEBUG NHibernate.Loader.Loader - processing result set
-22:01:49 [4] DEBUG NHibernate.Loader.Loader - result set row: 0
-22:01:49 [4] DEBUG NHibernate.Loader.Loader - result row: 
-22:01:49 [4] DEBUG NHibernate.Loader.Loader - done processing result set (1 rows)
-22:01:49 [4] DEBUG NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
-22:01:49 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
-22:01:49 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 0 ms
-22:01:49 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
-22:01:49 [4] DEBUG NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
-22:01:49 [4] DEBUG NHibernate.Connection.ConnectionProvider - Closing connection
-22:01:49 [4] DEBUG NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
-22:01:49 [4] DEBUG NHibernate.AdoNet.ConnectionManager - after autocommit
-22:01:49 [4] DEBUG NHibernate.Impl.SessionImpl - transaction completion
-22:01:49 [4] DEBUG NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
-22:01:49 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
-22:01:49 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT TOP 4 Id0_0_, Name0_0_, Descript3_0_0_, Price0_0_, Category0_0_ FROM (SELECT this_.Id as Id0_0_, this_.Name as Name0_0_, this_.Description as Descript3_0_0_, this_.Price as Price0_0_, this_.Category as Category0_0_, ROW_NUMBER() OVER(ORDER BY CURRENT_TIMESTAMP) as __hibernate_sort_row FROM [Product] this_) as query WHERE query.__hibernate_sort_row > 4 ORDER BY query.__hibernate_sort_row
-22:01:49 [4] INFO  NHibernate.Loader.Loader - SELECT TOP 4 Id0_0_, Name0_0_, Descript3_0_0_, Price0_0_, Category0_0_ FROM (SELECT this_.Id as Id0_0_, this_.Name as Name0_0_, this_.Description as Descript3_0_0_, this_.Price as Price0_0_, this_.Category as Category0_0_, ROW_NUMBER() OVER(ORDER BY CURRENT_TIMESTAMP) as __hibernate_sort_row FROM [Product] this_) as query WHERE query.__hibernate_sort_row > 4 ORDER BY query.__hibernate_sort_row
-22:01:49 [4] DEBUG NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
-22:01:49 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 1 ms
-22:01:49 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
-22:01:49 [4] DEBUG NHibernate.Loader.Loader - processing result set
-22:01:49 [4] DEBUG NHibernate.Loader.Loader - result set row: 0
-22:01:49 [4] DEBUG NHibernate.Loader.Loader - result row: EntityKey[DomainModel.Entities.Product#16]
-22:01:49 [4] DEBUG NHibernate.Loader.Loader - Initializing object from DataReader: [DomainModel.Entities.Product#16]
-22:01:49 [4] DEBUG NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [DomainModel.Entities.Product#16]
-22:01:49 [4] DEBUG NHibernate.Loader.Loader - result set row: 1
-22:01:49 [4] DEBUG NHibernate.Loader.Loader - result row: EntityKey[DomainModel.Entities.Product#17]
-22:01:49 [4] DEBUG NHibernate.Loader.Loader - Initializing object from DataReader: [DomainModel.Entities.Product#17]
-22:01:49 [4] DEBUG NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [DomainModel.Entities.Product#17]
-22:01:49 [4] DEBUG NHibernate.Loader.Loader - result set row: 2
-22:01:49 [4] DEBUG NHibernate.Loader.Loader - result row: EntityKey[DomainModel.Entities.Product#18]
-22:01:49 [4] DEBUG NHibernate.Loader.Loader - Initializing object from DataReader: [DomainModel.Entities.Product#18]
-22:01:49 [4] DEBUG NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [DomainModel.Entities.Product#18]
-22:01:49 [4] DEBUG NHibernate.Loader.Loader - result set row: 3
-22:01:49 [4] DEBUG NHibernate.Loader.Loader - result row: EntityKey[DomainModel.Entities.Product#19]
-22:01:49 [4] DEBUG NHibernate.Loader.Loader - Initializing object from DataReader: [DomainModel.Entities.Product#19]
-22:01:49 [4] DEBUG NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [DomainModel.Entities.Product#19]
-22:01:49 [4] DEBUG NHibernate.Loader.Loader - done processing result set (4 rows)
-22:01:49 [4] DEBUG NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
-22:01:49 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
-22:01:49 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 2 ms
-22:01:49 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
-22:01:49 [4] DEBUG NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
-22:01:49 [4] DEBUG NHibernate.Connection.ConnectionProvider - Closing connection
-22:01:49 [4] DEBUG NHibernate.Loader.Loader - total objects hydrated: 4
-22:01:49 [4] DEBUG NHibernate.Engine.TwoPhaseLoad - resolving associations for [DomainModel.Entities.Product#16]
-22:01:49 [4] DEBUG NHibernate.Engine.TwoPhaseLoad - done materializing entity [DomainModel.Entities.Product#16]
-22:01:49 [4] DEBUG NHibernate.Engine.TwoPhaseLoad - resolving associations for [DomainModel.Entities.Product#17]
-22:01:49 [4] DEBUG NHibernate.Engine.TwoPhaseLoad - done materializing entity [DomainModel.Entities.Product#17]
-22:01:49 [4] DEBUG NHibernate.Engine.TwoPhaseLoad - resolving associations for [DomainModel.Entities.Product#18]
-22:01:49 [4] DEBUG NHibernate.Engine.TwoPhaseLoad - done materializing entity [DomainModel.Entities.Product#18]
-22:01:49 [4] DEBUG NHibernate.Engine.TwoPhaseLoad - resolving associations for [DomainModel.Entities.Product#19]
-22:01:49 [4] DEBUG NHibernate.Engine.TwoPhaseLoad - done materializing entity [DomainModel.Entities.Product#19]
-22:01:49 [4] DEBUG NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
-22:01:49 [4] DEBUG NHibernate.AdoNet.ConnectionManager - after autocommit
-22:01:49 [4] DEBUG NHibernate.Impl.SessionImpl - transaction completion
-22:01:49 [4] DEBUG NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
-22:01:49 [4] DEBUG NHibernate.Impl.SessionImpl - [session-id=01e6ac63-5061-4a86-9097-10ae534c217a] opened session at timestamp:634000537099
-22:01:49 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
-22:01:49 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT count(*) as y0_ FROM [Product] this_
-22:01:49 [4] INFO  NHibernate.Loader.Loader - SELECT count(*) as y0_ FROM [Product] this_
-22:01:49 [4] DEBUG NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
-22:01:49 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
-22:01:49 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
-22:01:49 [4] DEBUG NHibernate.Loader.Loader - processing result set
-22:01:49 [4] DEBUG NHibernate.Loader.Loader - result set row: 0
-22:01:49 [4] DEBUG NHibernate.Loader.Loader - result row: 
-22:01:49 [4] DEBUG NHibernate.Loader.Loader - done processing result set (1 rows)
-22:01:49 [4] DEBUG NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
-22:01:49 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
-22:01:49 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 0 ms
-22:01:49 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
-22:01:49 [4] DEBUG NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
-22:01:49 [4] DEBUG NHibernate.Connection.ConnectionProvider - Closing connection
-22:01:49 [4] DEBUG NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
-22:01:49 [4] DEBUG NHibernate.AdoNet.ConnectionManager - after autocommit
-22:01:49 [4] DEBUG NHibernate.Impl.SessionImpl - transaction completion
-22:01:49 [4] DEBUG NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
-22:01:49 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
-22:01:49 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT TOP 4 Id0_0_, Name0_0_, Descript3_0_0_, Price0_0_, Category0_0_ FROM (SELECT this_.Id as Id0_0_, this_.Name as Name0_0_, this_.Description as Descript3_0_0_, this_.Price as Price0_0_, this_.Category as Category0_0_, ROW_NUMBER() OVER(ORDER BY CURRENT_TIMESTAMP) as __hibernate_sort_row FROM [Product] this_) as query WHERE query.__hibernate_sort_row > 8 ORDER BY query.__hibernate_sort_row
-22:01:49 [4] INFO  NHibernate.Loader.Loader - SELECT TOP 4 Id0_0_, Name0_0_, Descript3_0_0_, Price0_0_, Category0_0_ FROM (SELECT this_.Id as Id0_0_, this_.Name as Name0_0_, this_.Description as Descript3_0_0_, this_.Price as Price0_0_, this_.Category as Category0_0_, ROW_NUMBER() OVER(ORDER BY CURRENT_TIMESTAMP) as __hibernate_sort_row FROM [Product] this_) as query WHERE query.__hibernate_sort_row > 8 ORDER BY query.__hibernate_sort_row
-22:01:49 [4] DEBUG NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
-22:01:49 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 2 ms
-22:01:49 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
-22:01:49 [4] DEBUG NHibernate.Loader.Loader - processing result set
-22:01:49 [4] DEBUG NHibernate.Loader.Loader - result set row: 0
-22:01:49 [4] DEBUG NHibernate.Loader.Loader - result row: EntityKey[DomainModel.Entities.Product#20]
-22:01:49 [4] DEBUG NHibernate.Loader.Loader - Initializing object from DataReader: [DomainModel.Entities.Product#20]
-22:01:49 [4] DEBUG NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [DomainModel.Entities.Product#20]
-22:01:49 [4] DEBUG NHibernate.Loader.Loader - result set row: 1
-22:01:49 [4] DEBUG NHibernate.Loader.Loader - result row: EntityKey[DomainModel.Entities.Product#21]
-22:01:49 [4] DEBUG NHibernate.Loader.Loader - Initializing object from DataReader: [DomainModel.Entities.Product#21]
-22:01:49 [4] DEBUG NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [DomainModel.Entities.Product#21]
-22:01:49 [4] DEBUG NHibernate.Loader.Loader - result set row: 2
-22:01:49 [4] DEBUG NHibernate.Loader.Loader - result row: EntityKey[DomainModel.Entities.Product#23]
-22:01:49 [4] DEBUG NHibernate.Loader.Loader - Initializing object from DataReader: [DomainModel.Entities.Product#23]
-22:01:49 [4] DEBUG NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [DomainModel.Entities.Product#23]
-22:01:49 [4] DEBUG NHibernate.Loader.Loader - done processing result set (3 rows)
-22:01:49 [4] DEBUG NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
-22:01:49 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
-22:01:49 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 3 ms
-22:01:49 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
-22:01:49 [4] DEBUG NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
-22:01:49 [4] DEBUG NHibernate.Connection.ConnectionProvider - Closing connection
-22:01:49 [4] DEBUG NHibernate.Loader.Loader - total objects hydrated: 3
-22:01:49 [4] DEBUG NHibernate.Engine.TwoPhaseLoad - resolving associations for [DomainModel.Entities.Product#20]
-22:01:49 [4] DEBUG NHibernate.Engine.TwoPhaseLoad - done materializing entity [DomainModel.Entities.Product#20]
-22:01:49 [4] DEBUG NHibernate.Engine.TwoPhaseLoad - resolving associations for [DomainModel.Entities.Product#21]
-22:01:49 [4] DEBUG NHibernate.Engine.TwoPhaseLoad - done materializing entity [DomainModel.Entities.Product#21]
-22:01:49 [4] DEBUG NHibernate.Engine.TwoPhaseLoad - resolving associations for [DomainModel.Entities.Product#23]
-22:01:49 [4] DEBUG NHibernate.Engine.TwoPhaseLoad - done materializing entity [DomainModel.Entities.Product#23]
-22:01:49 [4] DEBUG NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
-22:01:49 [4] DEBUG NHibernate.AdoNet.ConnectionManager - after autocommit
-22:01:49 [4] DEBUG NHibernate.Impl.SessionImpl - transaction completion
-22:01:49 [4] DEBUG NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+12:43:33 [4] DEBUG NHibernate.Engine.TwoPhaseLoad - resolving associations for [DomainModel.Entities.Product#4]
+12:43:33 [4] DEBUG NHibernate.Engine.TwoPhaseLoad - done materializing entity [DomainModel.Entities.Product#4]
+12:43:33 [4] DEBUG NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
+12:43:33 [4] DEBUG NHibernate.AdoNet.ConnectionManager - after autocommit
+12:43:33 [4] DEBUG NHibernate.Impl.SessionImpl - transaction completion
+12:43:33 [4] DEBUG NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+12:46:53 [4] DEBUG NHibernate.Impl.SessionImpl - [session-id=46f94a32-a39c-475e-a8fb-c57f2c88ac95] opened session at timestamp:634008844132
+12:46:53 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+12:46:53 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT count(*) as y0_ FROM [Product] this_
+12:46:53 [4] INFO  NHibernate.Loader.Loader - SELECT count(*) as y0_ FROM [Product] this_
+12:46:53 [4] DEBUG NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+12:46:53 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 149 ms
+12:46:53 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+12:46:53 [4] DEBUG NHibernate.Loader.Loader - processing result set
+12:46:53 [4] DEBUG NHibernate.Loader.Loader - result set row: 0
+12:46:53 [4] DEBUG NHibernate.Loader.Loader - result row: 
+12:46:53 [4] DEBUG NHibernate.Loader.Loader - done processing result set (1 rows)
+12:46:53 [4] DEBUG NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
+12:46:53 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+12:46:53 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 163 ms
+12:46:53 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+12:46:53 [4] DEBUG NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+12:46:53 [4] DEBUG NHibernate.Connection.ConnectionProvider - Closing connection
+12:46:53 [4] DEBUG NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
+12:46:53 [4] DEBUG NHibernate.AdoNet.ConnectionManager - after autocommit
+12:46:53 [4] DEBUG NHibernate.Impl.SessionImpl - transaction completion
+12:46:53 [4] DEBUG NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+12:46:53 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+12:46:53 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT top 4 this_.Id as Id0_0_, this_.Name as Name0_0_, this_.Description as Descript3_0_0_, this_.Price as Price0_0_, this_.Category as Category0_0_ FROM [Product] this_
+12:46:53 [4] INFO  NHibernate.Loader.Loader - SELECT top 4 this_.Id as Id0_0_, this_.Name as Name0_0_, this_.Description as Descript3_0_0_, this_.Price as Price0_0_, this_.Category as Category0_0_ FROM [Product] this_
+12:46:53 [4] DEBUG NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+12:46:53 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+12:46:53 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+12:46:53 [4] DEBUG NHibernate.Loader.Loader - processing result set
+12:46:53 [4] DEBUG NHibernate.Loader.Loader - result set row: 0
+12:46:53 [4] DEBUG NHibernate.Loader.Loader - result row: EntityKey[DomainModel.Entities.Product#1]
+12:46:53 [4] DEBUG NHibernate.Loader.Loader - Initializing object from DataReader: [DomainModel.Entities.Product#1]
+12:46:53 [4] DEBUG NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [DomainModel.Entities.Product#1]
+12:46:53 [4] DEBUG NHibernate.Loader.Loader - result set row: 1
+12:46:53 [4] DEBUG NHibernate.Loader.Loader - result row: EntityKey[DomainModel.Entities.Product#2]
+12:46:53 [4] DEBUG NHibernate.Loader.Loader - Initializing object from DataReader: [DomainModel.Entities.Product#2]
+12:46:53 [4] DEBUG NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [DomainModel.Entities.Product#2]
+12:46:53 [4] DEBUG NHibernate.Loader.Loader - result set row: 2
+12:46:53 [4] DEBUG NHibernate.Loader.Loader - result row: EntityKey[DomainModel.Entities.Product#3]
+12:46:53 [4] DEBUG NHibernate.Loader.Loader - Initializing object from DataReader: [DomainModel.Entities.Product#3]
+12:46:53 [4] DEBUG NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [DomainModel.Entities.Product#3]
+12:46:53 [4] DEBUG NHibernate.Loader.Loader - result set row: 3
+12:46:53 [4] DEBUG NHibernate.Loader.Loader - result row: EntityKey[DomainModel.Entities.Product#4]
+12:46:53 [4] DEBUG NHibernate.Loader.Loader - Initializing object from DataReader: [DomainModel.Entities.Product#4]
+12:46:53 [4] DEBUG NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [DomainModel.Entities.Product#4]
+12:46:53 [4] DEBUG NHibernate.Loader.Loader - done processing result set (4 rows)
+12:46:53 [4] DEBUG NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
+12:46:53 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+12:46:53 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 20 ms
+12:46:53 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+12:46:53 [4] DEBUG NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+12:46:53 [4] DEBUG NHibernate.Connection.ConnectionProvider - Closing connection
+12:46:53 [4] DEBUG NHibernate.Loader.Loader - total objects hydrated: 4
+12:46:53 [4] DEBUG NHibernate.Engine.TwoPhaseLoad - resolving associations for [DomainModel.Entities.Product#1]
+12:46:53 [4] DEBUG NHibernate.Engine.TwoPhaseLoad - done materializing entity [DomainModel.Entities.Product#1]
+12:46:53 [4] DEBUG NHibernate.Engine.TwoPhaseLoad - resolving associations for [DomainModel.Entities.Product#2]
+12:46:53 [4] DEBUG NHibernate.Engine.TwoPhaseLoad - done materializing entity [DomainModel.Entities.Product#2]
+12:46:53 [4] DEBUG NHibernate.Engine.TwoPhaseLoad - resolving associations for [DomainModel.Entities.Product#3]
+12:46:53 [4] DEBUG NHibernate.Engine.TwoPhaseLoad - done materializing entity [DomainModel.Entities.Product#3]
+12:46:53 [4] DEBUG NHibernate.Engine.TwoPhaseLoad - resolving associations for [DomainModel.Entities.Product#4]
+12:46:53 [4] DEBUG NHibernate.Engine.TwoPhaseLoad - done materializing entity [DomainModel.Entities.Product#4]
+12:46:53 [4] DEBUG NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
+12:46:53 [4] DEBUG NHibernate.AdoNet.ConnectionManager - after autocommit
+12:46:53 [4] DEBUG NHibernate.Impl.SessionImpl - transaction completion
+12:46:53 [4] DEBUG NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+12:53:50 [4] DEBUG NHibernate.Impl.SessionImpl - [session-id=5dec9722-cecf-4271-b34d-049b3257fe24] opened session at timestamp:634008848300
+12:53:50 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+12:53:50 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT count(*) as y0_ FROM [Product] this_
+12:53:50 [4] INFO  NHibernate.Loader.Loader - SELECT count(*) as y0_ FROM [Product] this_
+12:53:50 [4] DEBUG NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+12:53:50 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 31 ms
+12:53:50 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+12:53:50 [4] DEBUG NHibernate.Loader.Loader - processing result set
+12:53:50 [4] DEBUG NHibernate.Loader.Loader - result set row: 0
+12:53:50 [4] DEBUG NHibernate.Loader.Loader - result row: 
+12:53:50 [4] DEBUG NHibernate.Loader.Loader - done processing result set (1 rows)
+12:53:50 [4] DEBUG NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
+12:53:50 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+12:53:50 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 31 ms
+12:53:50 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+12:53:50 [4] DEBUG NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+12:53:50 [4] DEBUG NHibernate.Connection.ConnectionProvider - Closing connection
+12:53:50 [4] DEBUG NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
+12:53:50 [4] DEBUG NHibernate.AdoNet.ConnectionManager - after autocommit
+12:53:50 [4] DEBUG NHibernate.Impl.SessionImpl - transaction completion
+12:53:50 [4] DEBUG NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+12:53:50 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+12:53:50 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT TOP 4 Id0_0_, Name0_0_, Descript3_0_0_, Price0_0_, Category0_0_ FROM (SELECT this_.Id as Id0_0_, this_.Name as Name0_0_, this_.Description as Descript3_0_0_, this_.Price as Price0_0_, this_.Category as Category0_0_, ROW_NUMBER() OVER(ORDER BY CURRENT_TIMESTAMP) as __hibernate_sort_row FROM [Product] this_) as query WHERE query.__hibernate_sort_row > 8 ORDER BY query.__hibernate_sort_row
+12:53:50 [4] INFO  NHibernate.Loader.Loader - SELECT TOP 4 Id0_0_, Name0_0_, Descript3_0_0_, Price0_0_, Category0_0_ FROM (SELECT this_.Id as Id0_0_, this_.Name as Name0_0_, this_.Description as Descript3_0_0_, this_.Price as Price0_0_, this_.Category as Category0_0_, ROW_NUMBER() OVER(ORDER BY CURRENT_TIMESTAMP) as __hibernate_sort_row FROM [Product] this_) as query WHERE query.__hibernate_sort_row > 8 ORDER BY query.__hibernate_sort_row
+12:53:50 [4] DEBUG NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+12:53:50 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 1 ms
+12:53:50 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+12:53:50 [4] DEBUG NHibernate.Loader.Loader - processing result set
+12:53:50 [4] DEBUG NHibernate.Loader.Loader - result set row: 0
+12:53:50 [4] DEBUG NHibernate.Loader.Loader - result row: EntityKey[DomainModel.Entities.Product#10]
+12:53:50 [4] DEBUG NHibernate.Loader.Loader - Initializing object from DataReader: [DomainModel.Entities.Product#10]
+12:53:50 [4] DEBUG NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [DomainModel.Entities.Product#10]
+12:53:50 [4] DEBUG NHibernate.Loader.Loader - done processing result set (1 rows)
+12:53:50 [4] DEBUG NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
+12:53:50 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+12:53:50 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 2 ms
+12:53:50 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+12:53:50 [4] DEBUG NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+12:53:50 [4] DEBUG NHibernate.Connection.ConnectionProvider - Closing connection
+12:53:50 [4] DEBUG NHibernate.Loader.Loader - total objects hydrated: 1
+12:53:50 [4] DEBUG NHibernate.Engine.TwoPhaseLoad - resolving associations for [DomainModel.Entities.Product#10]
+12:53:50 [4] DEBUG NHibernate.Engine.TwoPhaseLoad - done materializing entity [DomainModel.Entities.Product#10]
+12:53:50 [4] DEBUG NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
+12:53:50 [4] DEBUG NHibernate.AdoNet.ConnectionManager - after autocommit
+12:53:50 [4] DEBUG NHibernate.Impl.SessionImpl - transaction completion
+12:53:50 [4] DEBUG NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+12:53:54 [4] DEBUG NHibernate.Impl.SessionImpl - [session-id=ac33ac8b-8e43-407b-805a-c78b61092aff] opened session at timestamp:634008848344
+12:53:54 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+12:53:54 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT count(*) as y0_ FROM [Product] this_
+12:53:54 [4] INFO  NHibernate.Loader.Loader - SELECT count(*) as y0_ FROM [Product] this_
+12:53:54 [4] DEBUG NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+12:53:54 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+12:53:54 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+12:53:54 [4] DEBUG NHibernate.Loader.Loader - processing result set
+12:53:54 [4] DEBUG NHibernate.Loader.Loader - result set row: 0
+12:53:54 [4] DEBUG NHibernate.Loader.Loader - result row: 
+12:53:54 [4] DEBUG NHibernate.Loader.Loader - done processing result set (1 rows)
+12:53:54 [4] DEBUG NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
+12:53:54 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+12:53:54 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 0 ms
+12:53:54 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+12:53:54 [4] DEBUG NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+12:53:54 [4] DEBUG NHibernate.Connection.ConnectionProvider - Closing connection
+12:53:54 [4] DEBUG NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
+12:53:54 [4] DEBUG NHibernate.AdoNet.ConnectionManager - after autocommit
+12:53:54 [4] DEBUG NHibernate.Impl.SessionImpl - transaction completion
+12:53:54 [4] DEBUG NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+12:53:54 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+12:53:54 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT TOP 4 Id0_0_, Name0_0_, Descript3_0_0_, Price0_0_, Category0_0_ FROM (SELECT this_.Id as Id0_0_, this_.Name as Name0_0_, this_.Description as Descript3_0_0_, this_.Price as Price0_0_, this_.Category as Category0_0_, ROW_NUMBER() OVER(ORDER BY CURRENT_TIMESTAMP) as __hibernate_sort_row FROM [Product] this_) as query WHERE query.__hibernate_sort_row > 4 ORDER BY query.__hibernate_sort_row
+12:53:54 [4] INFO  NHibernate.Loader.Loader - SELECT TOP 4 Id0_0_, Name0_0_, Descript3_0_0_, Price0_0_, Category0_0_ FROM (SELECT this_.Id as Id0_0_, this_.Name as Name0_0_, this_.Description as Descript3_0_0_, this_.Price as Price0_0_, this_.Category as Category0_0_, ROW_NUMBER() OVER(ORDER BY CURRENT_TIMESTAMP) as __hibernate_sort_row FROM [Product] this_) as query WHERE query.__hibernate_sort_row > 4 ORDER BY query.__hibernate_sort_row
+12:53:54 [4] DEBUG NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+12:53:54 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 1 ms
+12:53:54 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+12:53:54 [4] DEBUG NHibernate.Loader.Loader - processing result set
+12:53:54 [4] DEBUG NHibernate.Loader.Loader - result set row: 0
+12:53:54 [4] DEBUG NHibernate.Loader.Loader - result row: EntityKey[DomainModel.Entities.Product#5]
+12:53:54 [4] DEBUG NHibernate.Loader.Loader - Initializing object from DataReader: [DomainModel.Entities.Product#5]
+12:53:54 [4] DEBUG NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [DomainModel.Entities.Product#5]
+12:53:54 [4] DEBUG NHibernate.Loader.Loader - result set row: 1
+12:53:54 [4] DEBUG NHibernate.Loader.Loader - result row: EntityKey[DomainModel.Entities.Product#7]
+12:53:54 [4] DEBUG NHibernate.Loader.Loader - Initializing object from DataReader: [DomainModel.Entities.Product#7]
+12:53:54 [4] DEBUG NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [DomainModel.Entities.Product#7]
+12:53:54 [4] DEBUG NHibernate.Loader.Loader - result set row: 2
+12:53:54 [4] DEBUG NHibernate.Loader.Loader - result row: EntityKey[DomainModel.Entities.Product#8]
+12:53:54 [4] DEBUG NHibernate.Loader.Loader - Initializing object from DataReader: [DomainModel.Entities.Product#8]
+12:53:54 [4] DEBUG NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [DomainModel.Entities.Product#8]
+12:53:54 [4] DEBUG NHibernate.Loader.Loader - result set row: 3
+12:53:54 [4] DEBUG NHibernate.Loader.Loader - result row: EntityKey[DomainModel.Entities.Product#9]
+12:53:54 [4] DEBUG NHibernate.Loader.Loader - Initializing object from DataReader: [DomainModel.Entities.Product#9]
+12:53:54 [4] DEBUG NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [DomainModel.Entities.Product#9]
+12:53:54 [4] DEBUG NHibernate.Loader.Loader - done processing result set (4 rows)
+12:53:54 [4] DEBUG NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
+12:53:54 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+12:53:54 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 2 ms
+12:53:54 [4] DEBUG NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+12:53:54 [4] DEBUG NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+12:53:54 [4] DEBUG NHibernate.Connection.ConnectionProvider - Closing connection
+12:53:54 [4] DEBUG NHibernate.Loader.Loader - total objects hydrated: 4
+12:53:54 [4] DEBUG NHibernate.Engine.TwoPhaseLoad - resolving associations for [DomainModel.Entities.Product#5]
+12:53:54 [4] DEBUG NHibernate.Engine.TwoPhaseLoad - done materializing entity [DomainModel.Entities.Product#5]
+12:53:54 [4] DEBUG NHibernate.Engine.TwoPhaseLoad - resolving associations for [DomainModel.Entities.Product#7]
+12:53:54 [4] DEBUG NHibernate.Engine.TwoPhaseLoad - done materializing entity [DomainModel.Entities.Product#7]
+12:53:54 [4] DEBUG NHibernate.Engine.TwoPhaseLoad - resolving associations for [DomainModel.Entities.Product#8]
+12:53:54 [4] DEBUG NHibernate.Engine.TwoPhaseLoad - done materializing entity [DomainModel.Entities.Product#8]
+12:53:54 [4] DEBUG NHibernate.Engine.TwoPhaseLoad - resolving associations for [DomainModel.Entities.Product#9]
+12:53:54 [4] DEBUG NHibernate.Engine.TwoPhaseLoad - done materializing entity [DomainModel.Entities.Product#9]
+12:53:54 [4] DEBUG NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
+12:53:54 [4] DEBUG NHibernate.AdoNet.ConnectionManager - after autocommit
+12:53:54 [4] DEBUG NHibernate.Impl.SessionImpl - transaction completion
+12:53:54 [4] DEBUG NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
